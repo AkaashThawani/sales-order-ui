@@ -124,7 +124,7 @@ export const apiService = {
     api.post(`/api/orders/${orderId}/generate-response`),
 
   generatePDF: (orderId: number) =>
-    api.post(`/api/orders/${orderId}/generate-pdf`),
+    api.get(`/api/orders/${orderId}/generate-pdf`),
 
   // Emails
   getEmails: (limit = 50, offset = 0) =>
