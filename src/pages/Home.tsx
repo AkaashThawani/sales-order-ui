@@ -275,10 +275,6 @@ export function Home() {
                   {/* Feature Metrics */}
                   <div className={`flex items-center space-x-6 ${index % 2 === 1 ? 'justify-end' : ''}`}>
                     <div className="flex items-center space-x-2">
-                      <div className="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
-                      <span className="text-sm font-semibold text-gray-700">99.9% Accuracy</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
                       <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
                       <span className="text-sm font-semibold text-gray-700">Real-time Processing</span>
                     </div>
