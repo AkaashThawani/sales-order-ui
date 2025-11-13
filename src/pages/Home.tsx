@@ -260,25 +260,12 @@ export function Home() {
               <div key={index} className={`flex items-center gap-16 ${index % 2 === 1 ? 'flex-row-reverse' : ''}`}>
                 {/* Content Side */}
                 <div className={`flex-1 space-y-6 ${index % 2 === 1 ? 'text-right' : ''}`}>
-                  <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 text-white text-2xl font-bold rounded-2xl shadow-xl ${index % 2 === 1 ? 'ml-auto' : ''}`}>
-                    {index + 1}
-                  </div>
-
-                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
-                    {feature.title}
-                  </h3>
+               
 
                   <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
                     {feature.description}
                   </p>
 
-                  {/* Feature Metrics */}
-                  <div className={`flex items-center space-x-6 ${index % 2 === 1 ? 'justify-end' : ''}`}>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
-                      <span className="text-sm font-semibold text-gray-700">Real-time Processing</span>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Visual Side */}
