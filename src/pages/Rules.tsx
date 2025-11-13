@@ -157,7 +157,7 @@ export function Rules() {
   })
 
   const updateRuleMutation = useMutation({
-    mutationFn: ({ id, data }: { id: number; data: unknown }) =>
+    mutationFn: ({ id, data }: { id: number; data: Partial<Rule> }) =>
       apiService.updateRule(id, data),
     onSuccess: () => {
       toast.success('Rule updated successfully')
