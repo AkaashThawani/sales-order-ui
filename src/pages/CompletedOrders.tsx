@@ -30,9 +30,12 @@ export function CompletedOrders() {
 
   const handleGeneratePDF = async (orderId: number) => {
     try {
+      // Use the API service to generate PDF
+      const response = await apiService.generatePDF(orderId)
+
       // Create a temporary link to trigger download
       const link = document.createElement('a')
-      link.href = `${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/orders/${orderId}/generate-pdf`
+      link.href = response.data.pdf_url || `${import.meta.env.VITE_API_BASE_URL || 'https://sales-order-intake-automation.onrender.com'}/api/orders/${orderId}/generate-pdf`
       link.download = `Sales_Order_${orderId}.pdf`
       document.body.appendChild(link)
       link.click()
