@@ -1,5 +1,10 @@
 # Sales Order Automation - Web Dashboard
 
+## Links
+- **Frontend Repository**: [https://github.com/AkaashThawani/sales-order-ui](https://github.com/AkaashThawani/sales-order-ui)
+- **Backend Repository**: [https://github.com/AkaashThawani/sales-order-intake-automation](https://github.com/AkaashThawani/sales-order-intake-automation)
+- **My GitHub**: [https://github.com/AkaashThawani](https://github.com/AkaashThawani)
+
 ## Overview
 
 This React/TypeScript web application provides a complete user interface for the Sales Order Automation system. It features:
